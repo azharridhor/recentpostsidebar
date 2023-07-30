@@ -26,7 +26,7 @@ function recentpostinfoarlina(t) {
                 y = y.substring(0, _), document.write(y + "..."), document.write("</i>");
             }
         var x = "", $ = 0;
-        document.write("<br>"), 1 == showpostdate && (x = x + v[parseInt(p, 10)] + "-" + g + " - " + f, $ = 1), 1 == showcommentnum && (1 == $ && (x += " | "), "1 Comments" == m && (m = "1 Comment"), "0 Comments" == m && (m = "No Comments"), m = '<a href="' + u + '" target ="_top">' + m + "</a>", x += m, $ = 1), 1 == displaymore && (1 == $ && (x += " | "), x = x + '<p><a href="' + r + '" class="url" target ="_top">Read more</a></p>', $ = 1), document.write(x), document.write("</li>"), 1 == displayseparator && e != numposts - 1 && document.write("<hr size=0.5>");
+        document.write("<br>"), 1 == showpostdate && (x = x + v[parseInt(p, 10)] + "-" + g + " - " + f, $ = 1), 1 == showcommentnum && (1 == $ && (x += " | "), "1 Comments" == m && (m = "1 Comment"), "0 Comments" == m && (m = "No Comments"), m = '<a href="' + u + '" target ="_top">' + m + "</a>", x += m, $ = 1), 1 == displaymore && (1 == $ && (x += " | "), x = x + '<a href="' + r + '" class="url" target ="_top">Read more &raquo;</a>', $ = 1), document.write(x), document.write("</li>"), 1 == displayseparator && e != numposts - 1 && document.write("<hr size=0.5>");
     }
     document.write("</ul>");
 }
